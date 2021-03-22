@@ -1,4 +1,5 @@
 export enum Gender {
+    All= 'All',
     None = 'unknown',
     Female = 'Female',
     Male = 'Male',
@@ -6,14 +7,16 @@ export enum Gender {
 }
 
 export enum Status {
+    All = 'All',
     None = 'unknown',
     Alive = 'Alive',
     Dead = 'Dead'
 }
 
 export type Character = {
+    id: number,
     name: string,
-    imageUrl: string,
+    image: string,
     gender: Gender,
     status: Status
 }
